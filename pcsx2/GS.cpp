@@ -38,9 +38,6 @@ void gsOnModeChanged( Fixed100 framerate, u32 newTickrate )
 
 void gsSetVideoMode(GS_VideoMode mode )
 {
-	if( gsVideoMode == mode )
-		return;
-
 	gsVideoMode = mode;
 	UpdateVSyncRate();
 }
